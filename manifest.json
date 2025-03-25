@@ -7,5 +7,38 @@
   "homepage_url": "https://github.com/NathanBarnard/tabJump",
   "icons": {
     "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "commands": {
+    "jump-first": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+1"
+      },
+      "description": "Jump to first tab (0%)"
+    },
+    "jump-third": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+2"
+      },
+      "description": "Jump to 33% position"
+    },
+    "jump-two-thirds": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+3"
+      },
+      "description": "Jump to 66% position"
+    },
+    "jump-last": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+4"
+      },
+      "description": "Jump to last tab (100%)"
+    }
   }
 }
